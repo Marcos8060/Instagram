@@ -46,3 +46,28 @@ body{
 .nav__input:focus{
     box-shadow: none;
 }
+/* top body section */
+.user__profiles{
+    height: 70px;
+    width: 70px;
+    border-radius: 999px;
+    border: 2px solid crimson;
+    padding: 3px;
+}
+.app__body{
+    text-align: center;
+}
+.top__body{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background: var(--white);
+    box-shadow: 1px 1px 1px 1px gray;
+    border-radius: 2px;
+    margin-top: 30px;
+    margin-left: 140px;
+    padding: 10px;
+    width: 50%;
+}
+.top__body > .app__profiles > img{
+    margin-left: 10px;
+}
