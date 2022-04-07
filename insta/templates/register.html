@@ -22,11 +22,11 @@
                     {% csrf_token %}
                      <img class="img-fluid icon" src="../static/images/icon.png" alt=""><br><br>
                      <label for="username" class="form-label">Username</label>
-                     <input type="text" class="form-control" placeholder="username">
+                     <input type="text" name="username" class="form-control" placeholder="username">
                      <label for="email" class="form-label">Email</label>
-                     <input type="email" class="form-control" placeholder="Email">
+                     <input type="email" name="email" class="form-control" placeholder="Email">
                      <label for="password" class="form-label">Password</label>
-                     <input type="password" class="form-control" placeholder="password">
+                     <input type="password" name="password" class="form-control" placeholder="password">
                      <button class="btn1">SignUp</button>
                      <p class="mt-4">Already have an acount?<a class="text-decoration-none m-2" href="#">Login</a></p>
                 </form>
