@@ -18,7 +18,7 @@
                 <img class="img-fluid" src="../static/images/phone.png" alt="">
             </div>
             <div class="col-md-4">
-                <form action="">
+                <form action="{% url 'register' %}" method="POST">
                     {% csrf_token %}
                      <img class="img-fluid icon" src="../static/images/icon.png" alt=""><br><br>
                      <label for="username" class="form-label">Username</label>
@@ -28,7 +28,7 @@
                      <label for="password" class="form-label">Password</label>
                      <input type="password" name="password" class="form-control" placeholder="password">
                      <button class="btn1">SignUp</button>
-                     <p class="mt-4">Already have an acount?<a class="text-decoration-none m-2" href="#">Login</a></p>
+                     <p class="mt-4">Already have an acount?<a class="text-decoration-none m-2" href="{% url 'login' %}">Login</a></p>
                 </form>
                 <div class="text-center">
                     <img class="img-fluid playstore" src="../static/images/appstore.png" alt="">
