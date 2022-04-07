@@ -70,7 +70,7 @@ body{
 }
 .left__top{
     background: white;
-    box-shadow: 1px 1px 1px 1px lightgray;
+    border: 1px solid lightgray;
     margin-right: 50px;
     padding: 20px;
 }
@@ -79,10 +79,14 @@ body{
     border: 1px solid lightgray;
     margin-top: 4vh;
     margin-right: 50px;
+    margin-bottom: 3vh;
+    padding-bottom: 10px;
 }
 .right{
-    float: right;
     margin-top: 100px;
+    top: 0;
+    position: fixed;
+    margin-left: 700px;
 }
 /* post section */
 .post__body{
@@ -98,4 +102,17 @@ body{
 .post__img{
     height: 400px;
     width: 100%;
+}
+.comment_form{
+    border: none;
+    margin-top: 5px;
+}
+.comment_form:focus{
+    box-shadow: none;
+}
+/* Follow */
+.follow__img{
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
 }
