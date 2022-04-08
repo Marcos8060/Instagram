@@ -29,7 +29,7 @@
                     <div class="app__icons">
                         <i class="bi bi-house-door-fill"></i>
                         <i class="bi bi-send"></i>
-                        <i class="bi bi-plus-square"></i>
+                        <i style="cursor: pointer;" class="bi bi-plus-square" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
                         <i class="bi bi-heart"></i>
                         <a href="#"><img class="img-fluid nav__img" src="../static/images/port-min.jpeg" alt=""></a>
                     </div>
@@ -119,5 +119,25 @@
             </div>
         </div>
     </div>
+    <!-- POST MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Write Post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+              {% csrf_token %}
+              <input type="file" name="image" class="form-control mb-4" placeholder="choose file">
+              <input type="text" name="caption" class="form-control" placeholder="Enter caption...">
+              <button type="button" class="btn2 " data-bs-dismiss="modal">Post</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- END OF POST MODAL -->
 </body>
 </html>

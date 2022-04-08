@@ -3,11 +3,21 @@
     --instagram: #FAFAFA;
     --white: #ffff;
     --gray: #EFEFEF;
+    --blue: #0095F7;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.btn2{
+    background: var(--blue);
+    border: none;
+    width: 100%;
+    color: var(--white);
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 10px;
 }
 body{
     background: var(--instagram);
