@@ -19,6 +19,9 @@
     font-weight: bolder;
     margin-top: 10px;
 }
+.caption:focus{
+    box-shadow: none;
+}
 body{
     background: var(--instagram);
     font-family: Nunito;
