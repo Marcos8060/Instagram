@@ -1,8 +1,12 @@
 from django.shortcuts import render,redirect
 from django.contrib import messages
 from django.contrib.auth.models import User,auth
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
+
 
 # Create your views here.
+@login_required
 def home(request):
     return render(request,'index.html')
 
@@ -41,3 +45,11 @@ def login(request):
             return redirect('login')
     else:
         return render(request,'login.html')
+
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('login')
+
+
