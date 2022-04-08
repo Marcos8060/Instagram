@@ -71,16 +71,16 @@ body{
 .left__top{
     background: white;
     border: 1px solid lightgray;
-    margin-right: 50px;
     padding: 20px;
 }
 .left__bottom{
     background: white;
     border: 1px solid lightgray;
-    margin-top: 4vh;
-    margin-right: 50px;
-    margin-bottom: 3vh;
     padding-bottom: 10px;
+}
+.post__item{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 .right{
     margin-top: 100px;

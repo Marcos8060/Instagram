@@ -3,12 +3,17 @@ from django.contrib import messages
 from django.contrib.auth.models import User,auth
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
+from .models import *
 
 
 # Create your views here.
 @login_required
 def home(request):
-    return render(request,'index.html')
+    posts = Post.objects.all()
+    context = {
+        'posts':posts,
+    }
+    return render(request,'index.html',context)
 
 
 def register(request):
